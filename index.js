@@ -20,7 +20,12 @@ const PORT = process.env.PORT || 3002;
 
 app.use(
   cors({
-    origin: ["zerodha-frontend-lovat.vercel.app", "https://zerodha-dashboard-two-orpin.vercel.app"],  
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "https://zerodha-frontend-lovat.vercel.app",      
+      "https://zerodha-dashboard-two-orpin.vercel.app"  
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
