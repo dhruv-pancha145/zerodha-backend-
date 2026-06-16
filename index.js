@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const authRoute = require("./Routes/AuthRoute");
+const authRoute = require("./routes/AuthRoute");
 
 
 const { orderModel: holdingmodel } = require("./model/orderModel");       // holdings
